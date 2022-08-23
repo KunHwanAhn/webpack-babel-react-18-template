@@ -27,5 +27,12 @@ module.exports = {
       },
     },
   },
-  rules: {},
+  rules: {
+    'import/extensions': ['error', {
+      pattern: {
+        js: 'never',
+        jsx: 'always',
+      },
+    }],
+  },
 };
